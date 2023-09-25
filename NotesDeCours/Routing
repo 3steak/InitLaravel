@@ -1,0 +1,19 @@
+*************  ROUTING   *************
+
+routes/web.php 
+
+- Pour accès au requête : Route::get('/blog', function (Request $request) { }
+
+- // parametre pour réécriture URL
+// passage de parametre dans url slug et id
+// ajout de where pour spécifier ce que l'on veut avec regex id et slug
+Route::get('/blog/{slug}-{id}', function (string $slug, string $id, Request $request) {
+    return [
+        'slug' => $slug,
+        'id' => $id,
+        'name' => $request->input('name')
+    ];
+})->where([
+    'id' => '[0-9]+',
+    'slug' => '[a-z0-9\-]+'
+]);
