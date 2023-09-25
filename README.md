@@ -4,7 +4,7 @@ Bienvenue dans le repository InitLaravel, un projet dédié à l'apprentissage d
 
 ## Objectif
 
-L'objectif principal de ce projet est de fournir aux développeurs débutants une base solide pour comprendre et utiliser Laravel 10. Vous y trouverez des informations essentielles et des exemples de code pour vous aider à démarrer rapidement avec ce framework puissant.
+L'objectif principal de ce projet est de fournir aux autres développeurs débutants une base solide pour comprendre et utiliser Laravel 10 et des exemples de code pour vous aider à démarrer rapidement avec ce framework puissant.
 
 ## Contenu du Repository
 
@@ -18,4 +18,4 @@ git clone https://github.com/votre-utilisateur/InitLaravel.git
 
 ## Contribuer
 
-Si vous souhaitez contribuer à ce projet en ajoutant des exemples de code, des guides supplémentaires ou en corrigeant des erreurs, n'hésitez pas à soumettre des pull requests. Nous accueillons favorablement toute contribution visant à améliorer ce projet et à aider les autres développeurs à apprendre Laravel 10.
+Si vous souhaitez contribuer à ce projet en ajoutant des exemples de code, des guides supplémentaires ou en corrigeant des erreurs, n'hésitez pas à soumettre des pull requests. J'accueille favorablement toute contribution visant à améliorer ce projet et à aider les autres développeurs à apprendre Laravel 10.
