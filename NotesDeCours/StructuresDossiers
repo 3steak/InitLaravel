@@ -1,0 +1,10 @@
+****** STRUCTURE DES DOSSIERS ***** 
+- /App : Code de l'application
+- /Bootstrap : faire démarrer une appli laravel
+- /config : element de config de laraval (mail, cache..)
+- / database : 
+- public : dossier racine dont index.php 
+- ressources : css js view (générer la vue)
+- root (rooter ? )
+- test (test unitaire et fonctionnel)
+- Artisan : excécuter des commandes

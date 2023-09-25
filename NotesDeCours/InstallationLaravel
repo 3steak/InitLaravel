@@ -1,0 +1,7 @@
+****** INSTALLATION LARAVEL *****
+- Avoir installer au préalable COMPOSER
+- Suivre la doc laravel : 
+    Dans le terminal
+        "composer create-project laravel/laravel example-app"
+    Se déplacer dans le nouveau dossier et 
+        "php artisan serve" -> permet d'ouvrir le port local 8000
