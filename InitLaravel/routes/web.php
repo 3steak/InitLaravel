@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('/blog')->group(function () {
+Route::prefix('/blog')->name('blog.')->group(function () {
 
     Route::get('/', function (Request $request) {
 
@@ -28,7 +28,7 @@ Route::prefix('/blog')->group(function () {
                 'id' => 13
             ]),
         ];
-    })->name('blog.index');
+    })->name('index');
 
     // parametre pour réécriture URL
     // passage de parametre dans url slug et id
@@ -42,5 +42,5 @@ Route::prefix('/blog')->group(function () {
     })->where([
         'id' => '[0-9]+',
         'slug' => '[a-z0-9\-]+'
-    ])->name('blog.show');
+    ])->name('show');
 });
