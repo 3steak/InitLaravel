@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,10 @@ Route::get('/', function () {
 Route::prefix('/blog')->name('blog.')->group(function () {
 
     Route::get('/', function (Request $request) {
+
+        $posts = Post::find(2);
+        dd($posts->title);
+        return $posts;
 
         return [
             "link" => \route('blog.show', [
