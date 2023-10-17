@@ -29,3 +29,18 @@ Route::prefix('/blog')->name('blog.')->controller(BlogController::class)->group(
         'slug' => '[a-z0-9\-]+'
     ])->name('show');
 });
+
+// ajout article en BDD
+// $post= new Post();
+// $post->title = 'Mon xieme article';
+// -> content 
+// utiliser fonction save pour insérer en BDD
+// -> save(); 
+
+// ou $post=Post::create([
+    // 'title'-> 'Titre du post',
+    // 'slug'-> 'new-title',
+// 'content'-> 'dfwsdfq'
+// ])
+// pour afficher $posts =  Post::all(['id', 'title']); // type collection
+// dd($posts[0]->title);

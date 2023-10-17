@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    // permet d'utiliser create() dnas web.php
+    // permet d'utiliser create() dans web.php
     protected $fillable = [
         'title',
         'slug',
@@ -17,6 +17,6 @@ class Post extends Model
     ];
 
 
-    // permet de refuser ce qu'on peut faire
+    // permet de refuser ce qu'on peut remplir
     protected $guarded = [];
 }
