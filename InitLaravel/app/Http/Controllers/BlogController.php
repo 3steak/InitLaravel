@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BlogFilterRequest;
 use App\Models\Post;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+// validation des données recues
+use Illuminate\Support\Facades\Validator;
 
 class BlogController extends Controller
 {
-    public function index(): View
+
+
+    public function index(BlogFilterRequest $request): View
     {
         // retourner une vue avec les posts
         // nom du dossier.index
