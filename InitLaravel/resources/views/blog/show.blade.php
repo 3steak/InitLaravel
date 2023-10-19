@@ -6,13 +6,13 @@
 
 <!-- dans la section content mettre... -->
 
+{{-- Page article --}}
 @section('content')
     <article>
-        <h2>{{ $post->title }}</h2>
+        <h1>{{ $post->title }}</h1>
         <p>
             {{$post->content}}
         </p>
     </article>
-
-
 @endsection
+

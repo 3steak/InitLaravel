@@ -13,13 +13,16 @@ class BlogController extends Controller
     public function index(): View
     {
         // retourner une vue avec les posts
+        // nom du dossier.index
         return view('blog.index', [
+            // j'envoi des articles paginé a ma vue
             'posts' => Post::paginate(1)
         ]);
     }
 
     public function show(string $slug, string $id): RedirectResponse | View
     {
+        // recuperation de l'article
         $post = Post::findOrFail($id);
         if ($post->slug != $slug) {
             return to_route('blog.show', ['slug' => $post->slug, 'id' => $post->id]);

@@ -1,13 +1,15 @@
 <!-- utilisation du template base -->
+{{-- je récupere le header avec le doctype...  --}}
 @extends('base')
 
-<!-- dans la section titre je veux... -->
+<!-- je renseigne le titre -->
 @section('title', 'Accueil du blog')
 
 <!-- dans la section content mettre... -->
 @section('content')
 <h1>Mon blog</h1>
 
+{{-- raccourci foreach --}}
 @foreach ($posts as $post)
     <article>
         <h2>{{ $post->title }}</h2>
@@ -21,4 +23,5 @@
 {{-- générer pagination ( que si paginate(1)) --}}
 {{ $posts->links() }}
 
+{{-- fin renseignement section content --}}
 @endsection
