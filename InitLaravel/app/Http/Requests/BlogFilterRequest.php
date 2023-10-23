@@ -22,7 +22,7 @@ class BlogFilterRequest extends FormRequest
     public function rules(): array
     {
         return  [
-            'title' => ['required', 'min:4']
+            // 'title' => ['required', 'min:4']
         ];
     }
 }
